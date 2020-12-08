@@ -1,0 +1,20 @@
+
+public class Test {
+
+	public static void main(String[] args) 
+	{
+		Test t = new Test();
+		A a = t.new A();
+		A c = t.new A();
+		a.b.c=c.b.a;
+	}
+	public class A{
+		
+		B b = new B();
+	}
+	public class B{
+		String a="test";
+		String c="test";
+	}	
+	
+}
